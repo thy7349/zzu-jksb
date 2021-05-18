@@ -45,7 +45,7 @@ class Log:
                 #如果配置环境变量可以不写绝对路径
                 wd = webdriver.Chrome(chrome_options=option)
                 wd.set_window_size(600 , 800)
-                wd.get("http://jksb.zzu.edu.cn/")
+                wd.get("https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/first0?fun2=&door=")
                 wd.switch_to.frame(0)
                 try:
                     wait(wd , 30 ,poll_frequency=0.5).until(ec.presence_of_element_located((By.NAME , 'uid'))).send_keys(self.uid)
